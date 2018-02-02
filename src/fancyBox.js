@@ -48,10 +48,8 @@ export default (el, imageList) => {
       webkitTransform: `translate3d(${boundingClientRect.left}px, ${boundingClientRect.top}px, 0px) scale(${zoom})`
     }
 
-    if (instance.imageItems[instance.imageIndex].width < window.innerWidth) {
-      instance.activeImageStyle = {
-        width: '100%'
-      }
+    instance.activeImageStyle = {
+      width: '100%'
     }
 
     setTimeout(() => {
